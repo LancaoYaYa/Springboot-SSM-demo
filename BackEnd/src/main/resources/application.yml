@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: BackEnd
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/db_ssmDemo?serverTimezone=UTC
+    username: root
+    password: liqiao259
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  port: 80
